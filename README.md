@@ -1,73 +1,86 @@
-# Welcome to your Lovable project
 
-## Project info
+# Shah Kirana - Local Grocery Store Web Application
 
-**URL**: https://lovable.dev/projects/b44b0d9a-a9b2-4b9f-86ff-6ec135c3c82c
+This is a fully functional web application for Shah Kirana, a local grocery store. It includes both a customer-facing storefront and an admin dashboard for store management.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+### Customer-Facing Features
+- **Homepage**: Store information, working hours, featured products
+- **Product Catalog**: Browse products by category with search and filter functionality
+- **Shopping Cart**: Add/remove products, manage quantities, see the cart total
+- **Contact Page**: Store location, contact form, business hours
 
-**Use Lovable**
+### Admin Features
+- **Admin Dashboard**: Secure login for store management
+- **Product Management**: Add, edit, and delete products
+- **Order Management**: View and manage customer orders (placeholder)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b44b0d9a-a9b2-4b9f-86ff-6ec135c3c82c) and start prompting.
+### Multilingual Support
+- Language toggle between English and Hindi
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tech Stack
+- **Frontend**: React, TailwindCSS, shadcn/ui components
+- **State Management**: React Context API for cart and language
+- **Routing**: React Router
+- **UI/UX**: Responsive design for all screen sizes
+- **Backend**: Ready for Supabase integration
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+### Installation
+1. Clone the repository
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/your-username/shah-kirana.git
+cd shah-kirana
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies
+```sh
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server
+```sh
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and visit `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Supabase Integration
 
-**Use GitHub Codespaces**
+To fully implement backend functionality:
+1. Create a Supabase account at [supabase.com](https://supabase.com)
+2. Create a new project
+3. Set up the following tables:
+   - `products` - for store inventory
+   - `categories` - for product categories
+   - `orders` - for customer orders
+   - `order_items` - for items within each order
+4. Configure authentication for admin access
+5. Update API connection details in the application
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Deployment
 
-## What technologies are used for this project?
+This application is ready to deploy with Vercel:
 
-This project is built with .
+1. Push the code to a GitHub repository
+2. Connect the repository to Vercel
+3. Configure environment variables for Supabase
+4. Deploy!
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Future Enhancements
 
-## How can I deploy this project?
+- Customer accounts and order history
+- Online payment integration
+- Real-time inventory updates
+- AI-powered chatbot for product recommendations
+- Delivery scheduling and tracking
 
-Simply open [Lovable](https://lovable.dev/projects/b44b0d9a-a9b2-4b9f-86ff-6ec135c3c82c) and click on Share -> Publish.
+## License
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License - see the LICENSE file for details.
