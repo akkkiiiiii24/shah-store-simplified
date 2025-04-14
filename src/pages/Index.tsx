@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { ShoppingBag, Clock, Phone, MapPin, ArrowRight } from "lucide-react";
 
 const Index = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   
   // Get featured products (first 4)
   const featuredProducts = products.slice(0, 4);
